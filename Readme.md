@@ -1,4 +1,4 @@
-#OBSERVER PATTERN
+# OBSERVER PATTERN
 Real-time News Subscription Service
 
 Background: You're tasked with designing a real-time news subscription service for a media company. 
