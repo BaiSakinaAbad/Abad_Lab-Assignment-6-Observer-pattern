@@ -3,16 +3,16 @@ import java.util.List;
 
 public class NewsService {
     public static void main(String[] args) {
-        Subscriber alan = new Subscriber();
-        alan.setSubscriberName("Alan Mido");
+        Subscriber sessam = new Subscriber();
+        sessam.setSubscriberName("Sessam");
 
-        Subscriber alan_kalbo = new Subscriber();
-        alan_kalbo.setSubscriberName("Alan Kalbo");
+        Subscriber leo = new Subscriber();
+        leo.setSubscriberName("Leo Kurosagi");
 
         // add subscribers to list
         List<Subscriber> subscribers = new ArrayList<Subscriber>();
-        subscribers.add(alan);
-        subscribers.add(alan_kalbo);
+        subscribers.add(sessam);
+        subscribers.add(leo);
 
         //create news
         NewsAgency newsAgency = new NewsAgency();
@@ -20,9 +20,8 @@ public class NewsService {
         newsAgency.setSubscribers(subscribers);
 
         //update subsribers
-
         System.out.println("EXCLUSIVE NEWS UPDATE!");
-        System.out.println(newsAgency.getNewsTitle());
+        System.out.println(newsAgency.updateSubscriber());
 
         //remove subscribers using detach
 

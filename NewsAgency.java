@@ -3,7 +3,6 @@ import java.util.List;
 public class NewsAgency implements NewsSubject{
     //Represents the central hub for publishing news. It maintains a list of subscribers and notifies them whenever new news is available.
   private String newsTitle;
-//    private Double stockPrice;
     private List<Subscriber> subscribers;
 
     public String getNewsTitle() {
@@ -32,11 +31,12 @@ public class NewsAgency implements NewsSubject{
     subscribers.remove(subscriber);
     }
 
+
     @Override
     public String updateSubscriber() {
         String output = "";
         for (Subscriber subscriber : subscribers) {
-            output += "Good Day! " + getSubscribersName() + "!\n" + newsTitle + ", is now AVAILABLE\nENJOY READING\n૮₍˶ •. • ⑅₎ა♡";
+            output += "\nGood Day! " + subscriber.getSubscriberName() + "!\n" + getNewsTitle() + ", is now AVAILABLE\nENJOY READING\n૮₍˶ •. • ⑅₎ა♡\n";
         }
         return output;
     }
